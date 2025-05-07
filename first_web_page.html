@@ -1,42 +1,404 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta content="width=device-width, initial-scale=1.0" />
-        <title>Web page design</title>
-        <link rel="stylesheet" href="web_page_css.css" />
-      </head>
-      <body>
-        <br>
-        <div class="contact-info">
-            <span>Call : +012345567890</span>
-            <span>Email : demo@gmail.com</span>
-            <span>Location</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" />
+    <title>Web page design</title>
+    <link rel="stylesheet" href="web_page_css.css" />
+  </head>
+  <body>
+    <br />
+    <div class="contact-info">
+      <span>Call : +012345567890</span>
+      <span>Email : demo@gmail.com</span>
+      <span>Location</span>
+    </div>
+    <br />
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Mico Logo" />
+          <!-- <span>Mico</span> -->
         </div>
-        <br>
-        <header>
-            
-            <div class="header-content">
-                <div class="logo">
-                    <!-- <img src="logo.png" alt="Mico Logo"> -->
-                    <span>Mico</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">TREATMENT</a></li>
-                        <li><a href="#">DOCTORS</a></li>
-                        <li><a href="#">TESTIMONIAL</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                
-                <div class="auth-links">
-                    <a href="#">LOGIN</a>
-                    <a href="#">SIGN UP</a>
-                </div>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">TREATMENT</a></li>
+            <li><a href="#">DOCTORS</a></li>
+            <li><a href="#">TESTIMONIAL</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-links">
+          <a href="#">LOGIN</a>
+          <a href="#">SIGN UP</a>
+        </div>
+      </div>
+    </header>
+    <div class="main_body_portion" style="margin: 0 0 0 100px">
+      <section class="hero">
+        <div class="content">
+          <div class="text">
+            <div class="play-btn">
+              <button><i class="fas fa-play"></i></button>
             </div>
-        </header>
-      </body>
+            <text
+              style="color: rgb(39, 38, 38); font-size: 30px; font-weight: 700"
+              >MICO</text
+            >
+            <br />
+            <text style="color: #1abc9c; font-size: 30px; font-weight: 700"
+              >HOSPITAL</text
+            >
+            <p class="description_of_contact_us" style="color: grey">
+              when looking at its layout. The point of using Lorem Ipsum is that
+              it has a more-or-less normal distribution of letters, as opposed
+              to
+            </p>
+            <br />
+            <a href="#" class="btn">Contact Us</a>
+          </div>
+          <div class="image">
+            <img src="assets/slider-img.jpg" alt="Hospital Image" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container" style="margin: 0 30px">
+          <div class="appointment-form">
+            <div class="form-header">
+              <h2>
+                <span class="book-text">BOOK</span>
+                <span class="appointment-text" style="color: #1abc9c"
+                  >APPOINTMENT</span
+                >
+              </h2>
+              <div class="header-underline"></div>
+            </div>
+
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="patient-name">Patient Name</label>
+                  <input
+                    type="text"
+                    id="patient-name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="doctor-name">Doctor's Name</label>
+                  <div class="select-wrapper">
+                    <select id="doctor-name">
+                      <option value="">Normal distribution</option>
+                      <option value="dr-smith">Dr. Smith</option>
+                      <option value="dr-johnson">Dr. Johnson</option>
+                      <option value="dr-williams">Dr. Williams</option>
+                    </select>
+                    <div class="select-arrow">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="department">Department's Name</label>
+                  <div class="select-wrapper">
+                    <select id="department">
+                      <option value="">Normal distribution</option>
+                      <option value="cardiology">Cardiology</option>
+                      <option value="neurology">Neurology</option>
+                      <option value="pediatrics">Pediatrics</option>
+                    </select>
+                    <div class="select-arrow">
+                      <i class="fas fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="appointment-phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="appointment-phone"
+                    placeholder="XXXXXXXXXX"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="symptoms">Symptoms</label>
+                  <input
+                    type="text"
+                    id="symptoms"
+                    placeholder="Describe your symptoms"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="appointment-date">Choose Date</label>
+                  <div class="date-input-wrapper">
+                    <input
+                      type="text"
+                      id="appointment-date"
+                      placeholder="MM-DD-YYYY"
+                      value="04-26-2025"
+                    />
+                    <div class="calendar-icon">
+                      <i class="fas fa-calendar-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div class="form-row">
+                <a href="#" class="btn">SUBMIT NOW</a>
+                <!-- <button type="submit" class="submit-btn">SUBMIT NOW</button> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section>
+        <div>
+          <div class="content">
+            <div class="image">
+              <img src="assets/about-img.jpg" alt="patient Image" />
+            </div>
+            <div class="text">
+              <text style="color: #1abc9c; font-size: 30px; font-weight: 700"
+                >About Hospital</text
+              >
+              <p class="description_of_contact_us" style="color: grey">
+                when looking at its layout. The point of using Lorem Ipsum is
+                that it has a more-or-less normal distribution of letters, as
+                opposed to
+              </p>
+              <br />
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <section>
+        <div class="services-container">
+          <div class="service-card">
+            <div
+              class="service-icon"
+              style="padding: 10px; align-items: center"
+            >
+              <img src="assets/t1.png" alt="" class="icon" />
+            </div>
+            <h2>Nephrologist Care</h2>
+            <p>
+              Specialized kidney care services from experienced nephrologists.
+              We provide comprehensive diagnosis and treatment for
+              kidney-related conditions.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+
+          <div class="service-card">
+            <div
+              class="service-icon"
+              style="padding: 10px; align-items: center"
+            >
+              <img src="assets/t2.png" alt="" class="icon" />
+            </div>
+            <h2>Eye Care</h2>
+            <p>
+              Complete eye examination and treatment services by qualified
+              ophthalmologists. From routine checks to advanced procedures for
+              various eye conditions.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+
+          <div class="service-card">
+            <div
+              class="service-icon"
+              style="padding: 10px; align-items: center"
+            >
+              <img src="assets/t3.png" alt="" class="icon" />
+            </div>
+            <h2>Pediatrician Clinic</h2>
+            <p>
+              Child-focused healthcare from birth through adolescence. Our
+              pediatricians provide preventive health services and treat
+              childhood illnesses.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+
+          <div class="service-card">
+            <div
+              class="service-icon"
+              style="padding: 10px; align-items: center"
+            >
+              <img src="assets/t4.png" alt="" class="icon" />
+            </div>
+            <h2>Parental Care</h2>
+            <p>
+              Comprehensive care for parents and families throughout pregnancy
+              and beyond. We offer guidance, support, and medical care for all
+              stages of parenthood.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <section class="doctors-section">
+        <div class="doctors-container">
+          <h2 class="section-title">
+            <span class="title-dark">OUR</span>
+            <span class="title-light">DOCTORS</span>
+          </h2>
+
+          <div>
+            <div class="doctors-cards">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="assets/team1.jpg" alt="Dr. Marco" />
+                </div>
+                <div class="doctor-info">
+                  <h3 class="doctor-name">Marco</h3>
+                  <p class="doctor-qualification">MBBS</p>
+                  <div class="social-links">
+                    <a href="#" class="social-link"
+                      ><img src="assets/facebook.png"
+                    /></a>
+                    <a href="#" class="social-link"
+                      ><img src="assets/facebook.png" />
+                    </a>
+                    <a href="#" class="social-link"
+                      ><img src="assets/facebook.png" />
+                    </a>
+                    <a href="#" class="social-link"
+                      ><img src="assets/facebook.png" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="assets/team2.jpg" alt="Dr. Hennry" />
+                </div>
+                <div class="doctor-info">
+                  <h3 class="doctor-name">Hennry</h3>
+                  <p class="doctor-qualification">MBBS</p>
+                  <div class="social-links">
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="assets/team3.jpg" alt="Dr. Jenni" />
+                </div>
+                <div class="doctor-info">
+                  <h3 class="doctor-name">Jenni</h3>
+                  <p class="doctor-qualification">MBBS</p>
+                  <div class="social-links">
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="#" class="social-link"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="testimonial-container">
+          <h2 class="section-title">TESTIMONIAL</h2>
+
+          <div>
+            <div class="testimonial-content">
+              <h3 class="client-name">Brad Johns</h3>
+              <div class="testimonial-text">
+                <p>
+                  Variouseditors now use Lorem Ipsum as their default model
+                  text, and a search for 'lorem ipsum' will uncover many web
+                  sites still in their infancy, editors now use Lorem Ipsum as
+                  their default model text, and a search for 'lorem ipsum' will
+                  uncover many web sites still in their infancy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="inputcontainer">
+          <div class="form-section">
+            <h1>GET IN TOUCH</h1>
+
+            <form>
+              <div class="form-group">
+                <input class="infoSection" type="text" placeholder="Full Name" required />
+              </div>
+
+              <div class="form-group">
+                <input class="infoSection" type="email" placeholder="Email" required />
+              </div>
+
+              <div class="form-group">
+                <input class="infoSection" type="tel" placeholder="Phone Number" />
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Message" required></textarea>
+              </div>
+
+              <div class="form-row">
+                <a href="#" class="btn">SEND</a>
+              </div>
+              <!-- <button type="submit" class="button">SEND</button> -->
+            </form>
+          </div>
+
+          <div class="image-section">
+            <img
+              src="assets/contact-img.jpg"
+              alt="Doctor with patient illustration"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
