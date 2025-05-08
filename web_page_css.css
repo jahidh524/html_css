@@ -562,3 +562,31 @@ button:hover {
     margin-bottom: 30px;
   }
 }
+
+.footer-div-color {
+  background-color: #1e1f1f;
+  padding: 0px 100px;
+}
+
+.image-section{
+  gap: 20px;
+}
+
+.footer-container {
+  color: #fff;
+  padding: 20px 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  width: 100%;
+}
+
+.subscribeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: 1e1f1f;
+  border: none;
+}
